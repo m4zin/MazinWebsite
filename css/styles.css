@@ -157,3 +157,9 @@ input[type=submit] {              /* customization of the submit button in conta
     padding: 20px;
     text-align: center;
 }
+
+.heading-xsl {
+    text-align: center;
+    color: green;
+    padding: 30px;
+}

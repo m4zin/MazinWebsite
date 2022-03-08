@@ -11,8 +11,8 @@ function loadXMLDocument(aboluteLocation) {
 }
 
 function renderXML() {
-    const xml = loadXMLDocument("./xml/index.xml");
-    const xsl = loadXMLDocument("./xml/index.xsl");
+    const xml = loadXMLDocument("./xml/cv.xml");
+    const xsl = loadXMLDocument("./xml/cv.xsl");
 
     
   let xsltProcessor = new XSLTProcessor();
