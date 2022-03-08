@@ -1,0 +1,32 @@
+{
+  "name": "mazin_website",
+  "version": "0.0.1",
+  "description": "Mazin's personal website",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/m4zin/MazinWebsite.git"
+  },
+  "keywords": [
+    "website",
+    "mazin",
+    "sherif"
+  ],
+  "author": "Mazin Sherif",
+  "license": "GPL-2.0-only",
+  "bugs": {
+    "url": "https://github.com/m4zin/MazinWebsite/issues"
+  },
+  "homepage": "https://github.com/m4zin/MazinWebsite#readme",
+  "dependencies": {
+    "body-parser": "^1.19.2",
+    "ejs": "^3.1.6",
+    "express": "^4.17.3",
+    "keyv": "^4.1.1",
+    "keyv-file": "^0.2.0"
+  }
+}

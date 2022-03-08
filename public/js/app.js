@@ -73,3 +73,10 @@ function validate() {
     alert("Thank you for your message");
     return true;
 }
+
+document.addEventListener("DOMContentLoaded", async function(event) {
+    const url = window.location.href;
+    if(url.includes("css=true")) {
+        alert("Thank you!")
+    }
+})
