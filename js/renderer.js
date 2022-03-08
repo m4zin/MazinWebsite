@@ -10,19 +10,18 @@ function loadXMLDocument(aboluteLocation) {
     }
 }
 
-function renderXML() {
-    const xml = loadXMLDocument("./xml/cv.xml");
-    const xsl = loadXMLDocument("./xml/cv.xsl");
+function parseXML() {
+    const xml = loadXMLDocument("./xml/index.xml");
+    const xsl = loadXMLDocument("./xml/index.xsl");
 
-    
-  let xsltProcessor = new XSLTProcessor();
-  xsltProcessor.importStylesheet(xsl);
+    let xsltProcessor = new XSLTProcessor();
+    xsltProcessor.importStylesheet(xsl);
   
-  let resultDocument = xsltProcessor.transformToFragment(xml, document);
-  console.log(resultDocument)
-  document.getElementById("xml-view").appendChild(resultDocument);
+    let resultDocument = xsltProcessor.transformToFragment(xml, document);
+    console.log(resultDocument)
+    document.getElementById("xml-view").appendChild(resultDocument);
 }
 
 document.addEventListener("DOMContentLoaded", async function(event) {
-    renderXML();
+    parseXML();
 })

@@ -1,53 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://www.w3.org/1999/xhtml">
     <xsl:template match="/">
-        <html>
-            <head>
-                <title>LAB 7</title>
-            </head>
-            <body>
-                <h1 style="color: red;">Mazin's CV</h1>
-                <table border="1">
-                    <tr>
-                        <th style="color:white;">Name</th>
-                        <th style="color:white;">Age</th>
-                        <th style="color:white;">Email</th>
-                        <th style="color:white;">Phone</th>
-                        <th style="color:white;">PostSecondaryEducation</th>
-                        <th style="color:white;">University</th>
-                        <th style="color:white;">PTWorkdDone</th>
-                        <th style="color:white;">Skills</th>
-                    </tr>
-                        <xsl:for-each select="CV">
-                            <tr>
-                                <td style="color:white;">
-                                    <xsl:value-of select="Name"/>
-                                </td>
-                                <td style="color:white;">
-                                    <xsl:value-of select="Age"/>
-                                </td>
-                                <td style="color:white;">    
-                                    <xsl:value-of select="Email"/>
-                                </td>
-                                <td style="color:white;">
-                                    <xsl:value-of select="Phone"/>
-                                </td>
-                                <td style="color:white;">
-                                    <xsl:value-of select="PostSecondaryEducation"/>
-                                </td>
-                                <td style="color:white;">
-                                    <xsl:value-of select="University"/>
-                                </td>
-                                <td style="color:white;">
-                                    <xsl:value-of select="PTWorkDone"/>
-                                </td>
-                                <td style="color:white;">
-                                    <xsl:value-of select="skills"/>
-                                </td>    
-                            </tr>
-                        </xsl:for-each>    
-                </table>
-            </body>
-        </html>
+                <h1>Mazin's CV</h1>
+                <xsl:for-each select="CV">
+                    <h1><xsl:value-of select="Name"/></h1>
+                    <p>Age: <xsl:value-of select="Age"/></p>
+                    <p>Email: <xsl:value-of select="Email"/></p>
+                    <p>Phone: <xsl:value-of select="Phone"/></p>
+                    <p>PostSecondaryEducation: <xsl:value-of select="PostSecondaryEducation"/></p>
+                    <p>University: <xsl:value-of select="University"/></p>
+                    <p>PTWorkDone: <xsl:value-of select="PTWorkDone"/></p>
+                    <p>Skills: <xsl:value-of select="skills"/></p>
+                </xsl:for-each>
     </xsl:template>   
-</xsl:stylesheet>     
+</xsl:stylesheet>

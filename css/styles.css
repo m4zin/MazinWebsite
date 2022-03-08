@@ -26,6 +26,10 @@ nav {                                /* for navbar */
     font-size: 2rem;
     padding-left: 20px;
 }
+
+.green-a-table {
+    color: green;
+}
   
 .nav-links {                      /* arrangs the navbar horizontally without any default style */
     list-style: none;
@@ -162,4 +166,14 @@ input[type=submit] {              /* customization of the submit button in conta
     text-align: center;
     color: green;
     padding: 30px;
+}
+
+.xml-view h1 {
+    text-align: center;
+    color: #008000;
+}
+
+.xml-view p {
+    text-align: center;
+    color: #008000;
 }
