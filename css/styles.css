@@ -79,6 +79,7 @@ nav {                                /* for navbar */
 
 .about-me {                         /*rounded corners for the box*/
     border-radius: 50%;
+    padding-bottom: 25px;
 }
 
 .pt-1 {                             /* contact form alignments */
@@ -163,9 +164,9 @@ input[type=submit] {              /* customization of the submit button in conta
 }
 
 .heading-xsl {
-    text-align: center;
-    color: green;
-    padding: 30px;
+    color: green; 
+    padding-top: 20px; 
+    padding-bottom: 20px
 }
 
 .xml-view h1 {
@@ -177,3 +178,23 @@ input[type=submit] {              /* customization of the submit button in conta
     text-align: center;
     color: #008000;
 }
+
+.CV-font {
+    color: #008000;
+    font-size: medium;
+}
+
+.thFontSize {
+    color:white; 
+    width:10%; 
+    padding-bottom: 5px; 
+    padding-top: 5px
+}
+
+.thfontSizeDesc {
+    color:white; 
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+

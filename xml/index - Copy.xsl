@@ -6,42 +6,42 @@
                 <title>LAB 7</title>
             </head>
             <body>
-                <h1 style="color: red;">Mazin's CV</h1>
+                <h1 style="color: green; padding-top: 19rem; padding-bottom: 10px;">CURRICULUM VITAE</h1>
                 <table border="1">
                     <tr>
-                        <th style="color:white;">Name</th>
-                        <th style="color:white;">Age</th>
-                        <th style="color:white;">Email</th>
-                        <th style="color:white;">Phone</th>
-                        <th style="color:white;">PostSecondaryEducation</th>
-                        <th style="color:white;">University</th>
-                        <th style="color:white;">PTWorkdDone</th>
-                        <th style="color:white;">Skills</th>
+                        <th class="thFontSize">Name</th>
+                        <th class="thFontSize">Age</th>
+                        <th class="thFontSize">Email</th>
+                        <th class="thFontSize">Phone</th>
+                        <th class="thFontSize">PostSecondaryEducation</th>
+                        <th class="thFontSize">Current University</th>
+                        <th class="thFontSize">Work Experience</th>
+                        <th class="thFontSize">Skills</th>
                     </tr>
                         <xsl:for-each select="CV">
                             <tr>
-                                <td style="color:white;">
+                                <td class="thfontSizeDesc">
                                     <xsl:value-of select="Name"/>
                                 </td>
-                                <td style="color:white;">
+                                <td class="thfontSizeDesc">
                                     <xsl:value-of select="Age"/>
                                 </td>
-                                <td style="color:white;">    
+                                <td class="thfontSizeDesc">    
                                     <xsl:value-of select="Email"/>
                                 </td>
-                                <td style="color:white;">
+                                <td class="thfontSizeDesc">
                                     <xsl:value-of select="Phone"/>
                                 </td>
-                                <td style="color:white;">
+                                <td class="thfontSizeDesc">
                                     <xsl:value-of select="PostSecondaryEducation"/>
                                 </td>
-                                <td style="color:white;">
+                                <td class="thfontSizeDesc">
                                     <xsl:value-of select="University"/>
                                 </td>
-                                <td style="color:white;">
+                                <td class="thfontSizeDesc">
                                     <xsl:value-of select="PTWorkDone"/>
                                 </td>
-                                <td style="color:white;">
+                                <td class="thfontSizeDesc">
                                     <xsl:value-of select="skills"/>
                                 </td>    
                             </tr>

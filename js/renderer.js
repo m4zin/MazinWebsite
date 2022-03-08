@@ -11,8 +11,8 @@ function loadXMLDocument(aboluteLocation) {
 }
 
 function parseXML() {
-    const xml = loadXMLDocument("./xml/index.xml");
-    const xsl = loadXMLDocument("./xml/index.xsl");
+    const xml = loadXMLDocument("./xml/index - Copy.xml");
+    const xsl = loadXMLDocument("./xml/index - Copy.xsl");
 
     let xsltProcessor = new XSLTProcessor();
     xsltProcessor.importStylesheet(xsl);
