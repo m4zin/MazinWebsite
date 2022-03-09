@@ -16,12 +16,11 @@
               <li class="nav-item-active" href="contact.html">Contact</a></li>
               <li class="nav-item"><a href="cv.html">CV</a></li>
               <li class="nav-item"><a href="hn.html">Hacker News</a></li>
-              <li class="nav-item"><a href="favgames.html">Favorite Games!</a></li>
             </ul>
           </nav>
           <!--form content-->
           <div class="center">
-            <form method="POST" action="/contact/store_contact" class="contact-form">
+            <form method="POST" action="/contact/store_contact" class="contact-form" onclick="return validate()">
               <h1 class="text-center white">Name</h1>
               <input type="text" id="name" name="name" placeholder="Chad Johnson"/>
               <h1 class="text-center white pt-1">Email</h1>
