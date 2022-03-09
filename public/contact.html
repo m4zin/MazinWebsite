@@ -3,6 +3,7 @@
         <title>Mazin's Home Page - About</title>
         <link rel="stylesheet" type="text/css" href="css/styles.css">
         <link href="https://fonts.googleapis.com/css?family=Courier+Prime" rel="stylesheet">
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
         <script src="js/app.js"></script>
     </head>
     <body>
@@ -20,7 +21,7 @@
           </nav>
           <!--form content-->
           <div class="center">
-            <form method="POST" action="/contact/store_contact" class="contact-form" onclick="return validate()">
+            <form method="POST" action="/contact/store_contact" class="contact-form">
               <h1 class="text-center white">Name</h1>
               <input type="text" id="name" name="name" placeholder="Chad Johnson"/>
               <h1 class="text-center white pt-1">Email</h1>
