@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>
+    <%= page_title %>
+  </title>
+  <%- include("partials/common-head") %>
+</head>
+<body>
+  <%- include("partials/navbar") %>
+  <%- include("partials/messages") %>
+  <div class="absolute bottom-3/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+    <h1 class="text-5xl font-bold italic">Curriculum Vitae</h1>
+  </div>
+  <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" id="xml-view"></div>
+  <canvas class="background"></canvas>
+</body>
+</html>

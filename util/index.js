@@ -33,18 +33,10 @@ function validatePhone(str) {
     return regex.test(str);
 }
 
-function validateMessage(str) {
-    if(str.length > 500) {
-        return false;
-    }
-
-    return true
-}
-
-function validate(name, email, phone, message) {
+function validate(name, email, phone) {
 
     /* array of fields */
-    let inputArr = [name, email, message, phone];
+    let inputArr = [name, email, phone];
     let errorMessage = [];
     const empty = isEmpty(inputArr);
 
@@ -65,11 +57,6 @@ function validate(name, email, phone, message) {
     const phoneValid = validatePhone(phone);
     if(!phoneValid) {
         errorMessage.push("Please enter a valid phone number")
-    }
-
-    const messageValid = validateMessage(message);
-    if(!messageValid) {
-        errorMessage.push("Please enter a valid message")
     }
 
     return errorMessage;

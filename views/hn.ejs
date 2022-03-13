@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>
+    <%= page_title %>
+  </title>
+  <%- include("partials/common-head") %>
+</head>
+<body>
+  <%- include("partials/navbar") %>
+  <%- include("partials/messages") %>
+  <div class="container mx-auto py-16 ">
+    <div class="flex flex-col place-items-center">
+      <h1 class="text-2xl font-bold pb-5">Latest Stories from HackerNews</h1>
+      <div class="w-full">
+            <div class="p-4 border-b border-gray-200 shadow">
+                <!-- <table> -->
+                <table id="dataTable" class="p-4">
+                    <thead class="bg-gray-50">
+                        <tr>
+                            <th class="p-8 text-xs text-gray-500">
+                                Title
+                            </th>
+                            <th class="p-8 text-xs text-gray-500">
+                                Url
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-white">
+                      <%- hn_table_rows %>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        $('#dataTable').DataTable({
+        scrollX:        true,
+        scrollCollapse: true,
+        fixedColumns: true
+    });
+  });
+</script>
+</body>
+</html>

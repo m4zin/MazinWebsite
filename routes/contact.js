@@ -5,14 +5,15 @@ const { storeContact } = require('../controllers/db')
 
 router.post('/store_contact', async (req, res) => {
     try {
-        const {name, email, phone, message} = req.body
+        const {name, email, tel} = req.body
         const randomString = await getRandomString(8);
 
-        let errArr = validate(name, email, phone, message);        
+        let errArr = validate(name, email, tel);
         if(errArr.length > 0) {
             let errString = errArr.join(",")
-            let errStringEncoded = Buffer.from(errString).toString('base64');
-            res.redirect(`/contact.html?error=${errStringEncoded}`)
+            console.log(errString)
+            req.flash('error_msg', errString)
+            res.redirect('/contact')
             return;
         }
 
@@ -20,12 +21,12 @@ router.post('/store_contact', async (req, res) => {
             id: randomString,
             name,
             email,
-            phone,
-            message
+            tel,
         }
     
         await storeContact(data)
-        res.redirect('/index.html?css=true')
+        req.flash('success_msg', 'Contact added successfully')
+        res.redirect('/')
     } catch (error) {
         console.log(error)
     }

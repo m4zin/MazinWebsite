@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>
+    <%= page_title %>
+  </title>
+  <%- include("partials/common-head") %>
+  <link href="/css/zippy.css" rel="stylesheet">
+</head>
+<body>
+  <%- include("partials/navbar") %>
+  <%- include("partials/messages") %>
+  <div class="container mx-auto py-16 ">
+    <div class="flex flex-col place-items-center">
+      <h2 class="text-2xl font-bold pb-5">Play some Zippy Bird!</h1>
+        <h2 class="text-xl font-bold pb-5" id="currentScore"></h1>
+      <div class="w-full">
+        <header>
+          <canvas id="canvas" width="431" height="768" class="rounded-2xl"></canvas>
+        </header>
+      </div>
+    </div>
+</div>
+
+<script src="/js/zippy-bird.js"></script>
+</body>
+</html>
