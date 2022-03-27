@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const port = 80
+const port = 6565
 const bodyParser = require('body-parser')
 const flash = require('connect-flash')
 const session = require('express-session');
